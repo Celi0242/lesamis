@@ -28,7 +28,7 @@
         "billede": "steak"
   },
     {
-        "navn": "Chevre Chaud Salad",
+        "navn": "Salade Chevre Chaud",
         "pris": 125,
         "kortbeskrivelse": "Gedeost salat med honning og valnødder",
         "kategori": "aften",
@@ -49,11 +49,11 @@
         "billede": "creme"
   },
     {
-        "navn": "Petite Fours",
+        "navn": "Crepe",
         "pris": 75,
         "kortbeskrivelse": "Mums",
         "kategori": "dessert",
-        "billede": "petite"
+        "billede": "crepe"
   },
     {
         "navn": "Croissant",
@@ -88,7 +88,7 @@
         "pris": 35,
         "kortbeskrivelse": "Creamet",
         "kategori": "morgenmad",
-        "billede": "cappuccino"
+        "billede": "cafe"
   },
     {
         "navn": "Americano",
@@ -97,20 +97,8 @@
         "kategori": "morgenmad",
         "billede": "americano"
   },
-    {
-        "navn": "Cafe Latté",
-        "pris": 35,
-        "kortbeskrivelse": "",
-        "kategori": "morgenmad",
-        "billede": "cafe"
-  },
-    {
-        "navn": "Chardonnay",
-        "pris": 70,
-        "kortbeskrivelse": "2016 Mendoza",
-        "kategori": "vin",
-        "billede": "char"
-  },
+
+
     {
         "navn": "Sancerre",
         "pris": 70,
@@ -126,7 +114,7 @@
         "billede": "dom"
   },
     {
-        "navn": "Bourgogne Rouge,",
+        "navn": "Bourgogne Rouge",
         "pris": 85,
         "kortbeskrivelse": "2015 Joseph Faiveley",
         "kategori": "vin",

@@ -1,0 +1,182 @@
+/* Website */
+
+.main {
+    max-width: 1000px;
+    margin: 0;
+}
+
+
+body {
+    background-color: ivory;
+    color: black;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding: 20px;
+
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 58px;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    color: orange;
+
+}
+
+h2 {
+    text-transform: capitalize;
+    color: orange;
+}
+
+h3 {
+    justify-content: center;
+    text-transform: capitalize;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    color: orange;
+
+}
+
+nav {
+    display: flex;
+    background-color: ivory;
+    padding: 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.menu-item {
+    background-color: ivory;
+    /* Green */
+    border: none;
+    color: orange;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.menu-item:hover {
+    color: ivory;
+    background-color: lightgray;
+    /* Green */
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 1229px) {
+    .main-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .ret img {
+        width: 100%
+    }
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ret img {
+        width: 100%
+    }
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+#modal {
+    width: 97vw;
+    height: 97vh;
+    position: fixed;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+    margin: 0;
+    background-color: black;
+
+}
+
+#modal-content {
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+
+}
+
+
+#modal.vis {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s;
+
+
+}
+
+.modal-billede {
+    width: 50vw;
+    height: auto;
+
+
+}
+
+
+
+
+
+button {
+
+    background-color: lightgray;
+    border: solid white;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    left: 400px;
+    justify-content: flex-end;
+
+
+}
+
+button:hover {
+
+    background-color: lightgray;
+    color: orange;
+
+
+
+}
+
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    color: black;
+}
