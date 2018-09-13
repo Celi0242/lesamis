@@ -7,12 +7,12 @@
 
 
 body {
-    background-color: ivory;
+    background-color: #a1c8ca;
     color: black;
     position: relative;
     margin: 0;
     min-height: 100%;
-    padding: 20px;
+    padding: 10px;
 
 }
 
@@ -24,12 +24,14 @@ h1 {
     margin: 0px auto;
     display: block;
     color: orange;
+    font-family: 'Noto Serif JP', sans-serif;
 
 }
 
 h2 {
     text-transform: capitalize;
-    color: orange;
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
 }
 
 h3 {
@@ -39,37 +41,51 @@ h3 {
     text-align: center;
     margin: 0px auto;
     display: block;
-    color: orange;
+    color: white;
+    font-family: 'Noto Serif JP', sans-serif;
 
 }
 
 nav {
     display: flex;
-    background-color: ivory;
+    background-color: #cbffcc;
     padding: 2px;
     flex-wrap: wrap;
     justify-content: center;
+    text-transform: capitalize;
+    overflow: hidden;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+nav img {
+    max-height: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+header {
+    background-color: #cbffcc;
+
 
 
 }
 
 .menu-item {
-    background-color: ivory;
+    background-color: #cbffcc;
     /* Green */
     border: none;
-    color: orange;
-    padding: 15px 32px;
-    text-align: center;
+    color: black;
+    padding: 15px 30px;
+    text-align: right;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 18px;
+    font-family: 'Noto Serif JP', sans-serif;
+    text-transform: uppercase;
 }
 
-.menu-item:hover {
-    color: ivory;
-    background-color: lightgray;
-    /* Green */
-}
 
 .main-container {
     display: grid;
@@ -100,6 +116,7 @@ nav {
     }
 }
 
+/* MODAL
 
 #modal {
     width: 97vw;
@@ -138,38 +155,38 @@ nav {
 
 
 }
-
-
-
-
+*/
 
 button {
 
-    background-color: lightgray;
-    border: solid white;
-    color: #FFFFFF;
+
+    background-color: #a1c8ca;
     text-align: center;
     font-size: 18px;
     padding: 10px 30px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    left: 400px;
     justify-content: flex-end;
+    font-family: 'Noto Serif JP', sans-serif;
+    border: solid #cbffcc;
 
 
 }
 
 button:hover {
 
-    background-color: lightgray;
-    color: orange;
+
+    color: lightgray;
 
 
 
 }
 
 
+
+
+/* Linje
 hr {
     display: block;
     margin-top: 0.5em;
@@ -180,3 +197,4 @@ hr {
     border-width: 3px;
     color: black;
 }
+*/

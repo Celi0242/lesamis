@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "navn": "Moules Frites",
         "pris": 145,
         "kortbeskrivelse": "Muslinger dampet i hvidviin og hvidløg. Hertil sprøde pommes frites.",
@@ -7,6 +8,8 @@
         "billede": "moules"
   },
     {
+
+        "id": "2",
         "navn": "Skaldyrsfad",
         "pris": 800,
         "kortbeskrivelse": "Alt det gode",
@@ -14,6 +17,7 @@
         "billede": "skaldyr"
   },
     {
+        "id": "3",
         "navn": "Rørt tartar",
         "pris": 175,
         "kortbeskrivelse": "Friskhakket kalveinderlår rørt med kapers, cornichons, tomat, sennep og krydderurter.",
@@ -21,6 +25,7 @@
         "billede": "tartar"
   },
     {
+        "id": "4",
         "navn": "Steak Au Frites",
         "pris": 175,
         "kortbeskrivelse": "Grillet ribeye med pommes frites, béarnaise og salat.",
@@ -28,6 +33,7 @@
         "billede": "steak"
   },
     {
+        "id": "5",
         "navn": "Salade Chevre Chaud",
         "pris": 125,
         "kortbeskrivelse": "Gedeost salat med honning og valnødder",
@@ -35,6 +41,7 @@
         "billede": "salat"
   },
     {
+        "id": "6",
         "navn": "Macaron",
         "pris": 45,
         "kortbeskrivelse": "Små specialiteter",
@@ -42,6 +49,7 @@
         "billede": "macaron"
   },
     {
+        "id": "7",
         "navn": "Crème Brûlée",
         "pris": 75,
         "kortbeskrivelse": "Den klassiske",
@@ -49,6 +57,7 @@
         "billede": "creme"
   },
     {
+        "id": "8",
         "navn": "Crepe",
         "pris": 75,
         "kortbeskrivelse": "Mums",
@@ -56,6 +65,7 @@
         "billede": "crepe"
   },
     {
+        "id": "9",
         "navn": "Croissant",
         "pris": 35,
         "kortbeskrivelse": "Sprøde og luftige",
@@ -63,6 +73,7 @@
         "billede": "croissant"
   },
     {
+        "id": "10",
         "navn": "Pain Au Chocolat",
         "pris": 35,
         "kortbeskrivelse": "Chokolade",
@@ -70,6 +81,7 @@
         "billede": "pain"
   },
     {
+        "id": "11",
         "navn": "Avocado mad",
         "pris": 75,
         "kortbeskrivelse": "pocheret øko æg på friskbagt surdejsbrød",
@@ -77,6 +89,7 @@
         "billede": "avo"
   },
     {
+        "id": "12",
         "navn": "Skyr med granola og bær",
         "pris": 55,
         "kortbeskrivelse": "frisk øko skyr med ristet granola og sæsonens bær",
@@ -84,6 +97,7 @@
         "billede": "skyr"
   },
     {
+        "id": "13",
         "navn": "Cappuccino",
         "pris": 35,
         "kortbeskrivelse": "Creamet",
@@ -91,6 +105,7 @@
         "billede": "cafe"
   },
     {
+        "id": "14",
         "navn": "Americano",
         "pris": 35,
         "kortbeskrivelse": "Mørk og smagfuld",
@@ -100,6 +115,7 @@
 
 
     {
+        "id": "15",
         "navn": "Sancerre",
         "pris": 70,
         "kortbeskrivelse": "2017 Dom. Merlin Cherrier",
@@ -107,6 +123,7 @@
         "billede": "sancerre"
   },
     {
+        "id": "16",
         "navn": "Dom Pérignon",
         "pris": 895,
         "kortbeskrivelse": "2001 Champagne",
@@ -114,6 +131,7 @@
         "billede": "dom"
   },
     {
+        "id": "17",
         "navn": "Bourgogne Rouge",
         "pris": 85,
         "kortbeskrivelse": "2015 Joseph Faiveley",

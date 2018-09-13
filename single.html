@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Amis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--
+    <section id="modal">
+        <button>Close</button>
+        <div id="modal-content">
+            <h2 class="modal-navn"></h2>
+            <img class="modal-billede" src="" alt="">
+            <p class="modal-kortbeskrivelse"></p>
+
+        </div>
+    </section>
+-->
+    <header>
+        <!--        <h1>Les Amis</h1>-->
+
+        <h3></h3>
+
+        <nav>
+            <img src="logo.png" alt="logo">
+            <button class="menu-item" data-kategori="aften">Aften</button>
+            <button class="menu-item" data-kategori="morgenmad">Morgen</button>
+            <button class="menu-item" data-kategori="dessert">Dessert</button>
+            <button class="menu-item" data-kategori="vin">Vin</button>
+            <!--  EVT KONTAKT HER !!           <button class="menu-item" data-kategori="sideorders">Sideorders</button>-->
+        </nav>
+
+
+
+    </header>
+    <!--
+    <section id="splash">
+        <img src="forside.jpg" alt="forside, plash">
+
+
+    </section>
+-->
+    <main class="main-container">
+        <section class="data-container">
+
+            <h2 class="data-navn"></h2>
+            <img class="data-billede" src="" alt="">
+            <p class="data-kortbeskrivelse"></p>
+            <p>Pris: <span class="data-pris"></span> DKK </p>
+        </section>
+    </main>
+
+    <button onclick="tilbage()">Tilbage</button>
+    <footer>
+        <br />
+        <hr /><br />
+        <br>© Bistro Les Amis 2018
+        <!--
+        <section id="knappen">
+            <a href="#top" class="button1">GÅ TIL TOP</a>
+
+
+        </section>
+-->
+    </footer>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson);
+        let urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get("id");
+
+
+        let dest = document.querySelector(".data-container"),
+            retter,
+            kategoriFilter = "alle";
+
+
+        async function hentJson() {
+            let jsonData = await fetch("json/menu.json");
+            retter = await jsonData.json();
+
+            //console.log(retter);
+
+            visRetter();
+        }
+
+        function tilbage() {
+            window.history.back();
+        }
+
+        document.querySelectorAll(".menu-item").forEach(knap => {
+            //console.log(knap);
+            knap.addEventListener("click", filtering)
+
+        });
+
+        function filtering() {
+
+            kategoriFilter = this.getAttribute("data-kategori");
+            //console.log(kategoriFilter);
+            visRetter();
+
+
+
+        }
+
+        function visRetter() {
+            let temp = document.querySelector(".retter-template");
+            let modtager = document.querySelector(".main-container");
+            modtager.textContent = "";
+            document.querySelector("header h3").textContent = kategoriFilter;
+            retter.forEach(ret => {
+                console.log(ret.kategori, kategoriFilter);
+                if (ret.kategori == kategoriFilter || kategoriFilter == "alle") {
+
+                    console.log(ret.kategori, kategoriFilter);
+                    let klon = temp.cloneNode(true).content;
+                    klon.querySelector(".data-navn").textContent = ret.navn;
+                    klon.querySelector(".data-billede").src = "imgs/" + ret.billede + ".jpg";
+                    klon.querySelector(".data-billede").addEventListener("click", () => {
+                        visModal(ret);
+                    });
+                    klon.querySelector(".data-billede").alt = "billede" + ret.navn;
+                    klon.querySelector(".data-billede").addEventListener("click", () => {
+                        window.location.href = "single.html?id=" + ret.id;
+                    });
+                    klon.querySelector(".data-kortbeskrivelse").textContent = ret.kortbeskrivelse;
+                    klon.querySelector(".data-pris").textContent = ret.pris;
+                    modtager.appendChild(klon);
+                }
+            });
+        }
+
+        function visRetter() {
+            let dest = document.querySelector(".main-container");
+
+            retter.forEach(ret => {
+
+                if (ret.id == id) {
+
+                    dest.querySelector(".data-navn").textContent = ret.navn;
+                    dest.querySelector(".data-billede").src = "imgs/" + ret.billede + ".jpg";
+                    dest.querySelector(".data-billede").alt = "billede" + ret.navn;
+                    dest.querySelector(".data-langbeskrivelse").textContent = ret.langbeskrivelse;
+                    dest.querySelector(".data-pris").textContent = ret.pris;
+                }
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
