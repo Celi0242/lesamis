@@ -1,0 +1,135 @@
+[
+    {
+        "navn": "Moules Frites",
+        "pris": 145,
+        "kortbeskrivelse": "Muslinger dampet i hvidviin og hvidløg. Hertil sprøde pommes frites.",
+        "kategori": "aften",
+        "billede": "moules"
+  },
+    {
+        "navn": "Skaldyrsfad",
+        "pris": 800,
+        "kortbeskrivelse": "Alt det gode",
+        "kategori": "aften",
+        "billede": "skaldyr"
+  },
+    {
+        "navn": "Rørt tartar",
+        "pris": 175,
+        "kortbeskrivelse": "Friskhakket kalveinderlår rørt med kapers, cornichons, tomat, sennep og krydderurter.",
+        "kategori": "aften",
+        "billede": "tartar"
+  },
+    {
+        "navn": "Steak Au Frites",
+        "pris": 175,
+        "kortbeskrivelse": "Grillet ribeye med pommes frites, béarnaise og salat.",
+        "kategori": "aften",
+        "billede": "steak"
+  },
+    {
+        "navn": "Chevre Chaud Salad",
+        "pris": 125,
+        "kortbeskrivelse": "Gedeost salat med honning og valnødder",
+        "kategori": "aften",
+        "billede": "salat"
+  },
+    {
+        "navn": "Macaron",
+        "pris": 45,
+        "kortbeskrivelse": "Små specialiteter",
+        "kategori": "dessert",
+        "billede": "macaron"
+  },
+    {
+        "navn": "Crème Brûlée",
+        "pris": 75,
+        "kortbeskrivelse": "Den klassiske",
+        "kategori": "dessert",
+        "billede": "creme"
+  },
+    {
+        "navn": "Petite Fours",
+        "pris": 75,
+        "kortbeskrivelse": "Mums",
+        "kategori": "dessert",
+        "billede": "petite"
+  },
+    {
+        "navn": "Croissant",
+        "pris": 35,
+        "kortbeskrivelse": "Sprøde og luftige",
+        "kategori": "morgenmad",
+        "billede": "croissant"
+  },
+    {
+        "navn": "Pain Au Chocolat",
+        "pris": 35,
+        "kortbeskrivelse": "Chokolade",
+        "kategori": "morgenmad",
+        "billede": "pain"
+  },
+    {
+        "navn": "Avocado mad",
+        "pris": 75,
+        "kortbeskrivelse": "pocheret øko æg på friskbagt surdejsbrød",
+        "kategori": "morgenmad",
+        "billede": "avo"
+  },
+    {
+        "navn": "Skyr med granola og bær",
+        "pris": 55,
+        "kortbeskrivelse": "frisk øko skyr med ristet granola og sæsonens bær",
+        "kategori": "morgenmad",
+        "billede": "skyr"
+  },
+    {
+        "navn": "Cappuccino",
+        "pris": 35,
+        "kortbeskrivelse": "Creamet",
+        "kategori": "morgenmad",
+        "billede": "cappuccino"
+  },
+    {
+        "navn": "Americano",
+        "pris": 35,
+        "kortbeskrivelse": "Mørk og smagfuld",
+        "kategori": "morgenmad",
+        "billede": "americano"
+  },
+    {
+        "navn": "Cafe Latté",
+        "pris": 35,
+        "kortbeskrivelse": "",
+        "kategori": "morgenmad",
+        "billede": "cafe"
+  },
+    {
+        "navn": "Chardonnay",
+        "pris": 70,
+        "kortbeskrivelse": "2016 Mendoza",
+        "kategori": "vin",
+        "billede": "char"
+  },
+    {
+        "navn": "Sancerre",
+        "pris": 70,
+        "kortbeskrivelse": "2017 Dom. Merlin Cherrier",
+        "kategori": "vin",
+        "billede": "sancerre"
+  },
+    {
+        "navn": "Dom Pérignon",
+        "pris": 895,
+        "kortbeskrivelse": "2001 Champagne",
+        "kategori": "vin",
+        "billede": "dom"
+  },
+    {
+        "navn": "Bourgogne Rouge,",
+        "pris": 85,
+        "kortbeskrivelse": "2015 Joseph Faiveley",
+        "kategori": "vin",
+        "billede": "rouge"
+  }
+]
