@@ -34,7 +34,7 @@
   },
     {
         "id": "5",
-        "navn": "Salade Chevre Chaud",
+        "navn": "Salade Chèvre Chaud",
         "pris": 125,
         "kortbeskrivelse": "Gedeost salat med honning og valnødder",
         "kategori": "aften",
@@ -42,7 +42,7 @@
   },
     {
         "id": "6",
-        "navn": "Macaron",
+        "navn": "Macarons",
         "pris": 45,
         "kortbeskrivelse": "Små specialiteter",
         "kategori": "dessert",
@@ -58,7 +58,7 @@
   },
     {
         "id": "8",
-        "navn": "Crepe",
+        "navn": "Crêpes Suzettes",
         "pris": 75,
         "kortbeskrivelse": "Mums",
         "kategori": "dessert",

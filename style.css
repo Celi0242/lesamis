@@ -12,8 +12,12 @@ body {
     position: relative;
     margin: 0;
     min-height: 100%;
-    padding: 20px;
 
+}
+
+.main-container {
+
+    padding: 20px;
 }
 
 h1 {
@@ -55,6 +59,8 @@ nav {
     text-transform: capitalize;
     overflow: hidden;
     font-family: 'Noto Serif JP', sans-serif;
+
+
 }
 
 nav img {
@@ -62,16 +68,14 @@ nav img {
     flex-wrap: wrap;
     justify-content: center;
 
-}
 
+}
 
 header {
     background-color: #cbffcc;
-    position: sticky;
-
-
 
 }
+
 
 .menu-item {
     background-color: #cbffcc;
@@ -85,6 +89,8 @@ header {
     font-size: 18px;
     font-family: 'Noto Serif JP', sans-serif;
     text-transform: uppercase;
+    z-index: 2000;
+    position: relative;
 }
 
 
@@ -117,84 +123,76 @@ header {
     }
 }
 
-/* MODAL
-
-#modal {
-    width: 97vw;
-    height: 97vh;
-    position: fixed;
-    text-align: center;
-    color: white;
-    opacity: 0;
-    pointer-events: none;
-    transition: 1s;
-    margin: 0;
-    background-color: black;
-
-}
-
-#modal-content {
-    width: 60%;
-    height: 70%;
-    margin: auto;
-    background-color: rgba(0, 0, 0, .5);
-
-}
-
-
-#modal.vis {
-    opacity: 1;
-    pointer-events: all;
-    transition: 0.5s;
-
-
-}
-
-.modal-billede {
-    width: 50vw;
-    height: auto;
-
-
-}
-*/
 
 button {
 
-
-    background-color: #a1c8ca;
+    background-color: #cbffcc;
     text-align: center;
     font-size: 18px;
     padding: 10px 30px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
     justify-content: flex-end;
     font-family: 'Noto Serif JP', sans-serif;
-    border: solid #cbffcc;
+    border: solid white;
+    color: white;
+
 
 
 }
 
 button:hover {
 
-
     color: lightgray;
 
 
 
+
 }
 
 
 
-/* Linje
-hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 3px;
-    color: black;
+img:hover {
+    filter: brightness(70%);
+    z-index: -200;
+
 }
-*/
+
+.responsive {
+    width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+/* NAv bar sticky */
+
+#navbar {
+    overflow: hidden;
+    z-index: 6000;
+}
+
+.content {
+    padding: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.sticky + .content {
+    padding-top: 60px;
+}
