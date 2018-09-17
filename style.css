@@ -46,8 +46,9 @@ h3 {
     text-align: center;
     margin: 0px auto;
     display: block;
-    color: white;
+    color: black;
     font-family: 'Noto Serif JP', sans-serif;
+
 
 }
 
@@ -172,7 +173,6 @@ footer {
     left: 0;
     padding: 1rem;
     text-align: center;
-    justify-content: space-between;
     background-color: #cbffcc;
 
 
@@ -210,4 +210,5 @@ footer {
     flex-basis: 300px;
     flex-grow: 1;
     flex-direction: column;
+
 }
