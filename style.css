@@ -18,6 +18,7 @@ body {
 .main-container {
 
     padding: 20px;
+    justify-content: center;
 }
 
 h1 {
@@ -126,7 +127,7 @@ header {
 
 button {
 
-    background-color: #cbffcc;
+    background-color: #a1c8ca;
     text-align: center;
     font-size: 18px;
     padding: 10px 30px;
@@ -153,7 +154,7 @@ button:hover {
 
 
 
-img:hover {
+.main-container img:hover {
     filter: brightness(70%);
     z-index: -200;
 
@@ -172,6 +173,9 @@ footer {
     padding: 1rem;
     text-align: center;
     justify-content: space-between;
+    background-color: #cbffcc;
+
+
 }
 
 
@@ -195,4 +199,15 @@ footer {
 
 .sticky + .content {
     padding-top: 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-direction: column;
 }

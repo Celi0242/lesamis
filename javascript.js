@@ -88,10 +88,10 @@
  };
 
 
- var navbar = document.getElementById("navbar");
+ let navbar = document.getElementById("navbar");
 
 
- var sticky = navbar.offsetTop;
+ let sticky = navbar.offsetTop;
 
  function myFunction() {
      if (window.pageYOffset >= sticky) {
