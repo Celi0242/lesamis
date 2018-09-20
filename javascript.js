@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", hentJson);
+document.addEventListener("DOMContentLoaded", start);
 let urlParams = new URLSearchParams(window.location.search);
 let id = urlParams.get("id");
 
@@ -6,6 +6,13 @@ let id = urlParams.get("id");
 let dest = document.querySelector(".data-container"),
     retter,
     kategoriFilter = "alle";
+
+function start() {
+    hentJson();
+    document.querySelector(".burger").addEventListener("click", toggleMenu);
+    document.querySelector("ul").addEventListener("click", toggleMenu);
+
+}
 
 //Indlæser json fil, lægger retterne i arrayet//
 async function hentJson() {
@@ -89,7 +96,7 @@ function visRetter() {
 
 // STICKY NAV - gør at navbar ikke rykker sig når brugeren scroller ned langs siden
 window.onscroll = function () {
-    StickyNav()
+    StickyNav();
 };
 
 
@@ -105,3 +112,8 @@ function StickyNav() {
         navbar.classList.remove("sticky");
     }
 };
+
+function toggleMenu() {
+    document.querySelector(".burger").classList.toggle("change");
+    document.querySelector("nav").classList.toggle("show");
+}
